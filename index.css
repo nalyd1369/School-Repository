@@ -27,6 +27,13 @@ image {
     display: inline-block;
 }
 
+#github {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 header {
     padding: 80px;
     text-align: center;

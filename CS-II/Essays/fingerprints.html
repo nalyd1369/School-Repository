@@ -3,11 +3,13 @@
   <head>
     <title>Dylan's Digital Portfolio</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="apa2.css">
   </head>
 
   <body>
@@ -20,17 +22,26 @@
     </header>
 
     <h3><u>Fingerprints</u></h3>
-    <p>
-      The internet is simple on the surface but as you look deeper you realize the layers of security and encryption baked into everything you do. One of the largest universal forms of security on the internet is HTTPS, meaning secure HTTP. The purpose of HTTPS is to provide users with a guarantee of privacy, allowing them to be confident in transferring personal information online. This is through the use of encryption that nobody, even the creator, can break. It also prevents 3rd parties from listening in on a private connection between user and server. Unfortunately, organizations are trying to circumvent this using HTTPS Proxy Appliances. A proxy is a middleman between you and the internet, it's capable of viewing all data going in and out of the network, including sensitive information.
-      <br>A MITM or a man in the middle is a term for someone who mediates between two places. It presents risks because it offers another point of failure for a malicious attacker to present. Attacks usually involve IP spoofing, ARP spoofing, HTTPS spoofing, SSL hijacking, etc. A hash is a complex mathematical algorithm that can help prevent most spoofing attacks. A good hash is efficient in processing information while having the most difference between very similar addresses. Another system of detecting fake addresses is through Certificate Authorities which requires sites to verify their identity and then assigns them a unique address to certify their authenticity.
-      <br>You can prevent SSL interceptions by using trusted Wi-Fi networks and checking the security certificates of your network traffic. It can be detected by monitoring and verifying all the web certificates that get visited. Unfortunately, keep in mind that there will be some false positives and negatives. A false positive and negative is when something returns positive or negative but that result is wrong.
-      <br>An unfortunate reality is that large corporations will monitor all the web traffic and data that they can, we need to work together to prevent them from eavesdropping on and misusing our information. The only time monitoring network traffic should be allowable is when it’s by the government with probable cause of illegal activities.
 
-      <br><br>
-      <img src="../Images/diagram.png" alt="Diagram">
-      <br><br>
-      Steve Gibson, G. I. B. S. O. N. R. E. S. E. A. R. C. H. C. O. R. P. O. R. A. T. I. O. N. (n.d.). GRC : SSL TLS HTTPS web server certificate fingerprints . GRC | SSL TLS HTTPS Web Server Certificate Fingerprints . Retrieved August 25, 2022, from https://www.grc.com/fingerprints.htm#top
-      What can users do to protect against SSL interception attacks? Quora. (n.d.). Retrieved August 25, 2022, from https://www.quora.com/What-can-users-do-to-protect-against-SSL-interception-attacks 
-    </p>
+    <p class="APAHead">Dylan Pettijohn<br>Allen High School<br>Computer Science II<br>Mr. Ben-Yaakov<br>September 9, 2022</p><br>
+    <h4>HTTPS Protocol</h4>
+    <p>When the internet was first conceived it utilized an insecure HTTP (Hypertext Transfer Protocol). Although it worked well it proved to be too insecure warranting the creation of HTTPS (Hypertext Transfer Protocol Secure) also known as TLS(Transport Layer Security) and SSL(Secure Sockets Layer). HTTPS was created for both improved privacy and security(Gibson, n.d). HTTPS encrypts all data sent between a client and server, which allows for systems of authentication that ensure that the website you are visiting has a legitimate certificate and identity. A browser will look towards CAs (Certificate Authorities) for a digitally signed certificate, if one is found and confirmed by a trusted CA then the website will be deemed safe and secure by the HTTPS protocol. </p>
+
+    <h4>HTTPS Proxy Appliances</h4>
+    <p>However with this new security comes organizations trying to crack it. Many of the securities HTTPS offers can be negated with a Proxy Server, commonly used by schools, businesses, and other institutions. By adding an external Certificate authority an organization can force computers connected to the network trust an unsecure server. They can then manipulate that certificate authority (Gibson n.d) to redirect all traffic to the proxy server before going to the true server. This allows the network to view all user information, including personal information such as banking information, security numbers, and passwords. This is a type of MTM (Man-in-the-middle) exploit. </p>
+
+    <h4>Fingerprints</h4>
+    <p>HTTPS/SSL decryption cannot be prevented, however it can be detected. Legitimate servers have unique private and public keys meaning that we check if our data is being sent through a Proxy Application. Everyone has access to Public Keys, these cannot be used to find the Private Key, which only the organization will hold. This means that the certificate will have to utilize a different public key so that it may also have access to the private key. This means that the certificate will have to run through a different public key, allowing you to determine where your traffic is being redirected or if it’s being funneled through a proxy. </p>
+
+    <p>All this modification to the certificate can be hard to detect purely through its data so it’s often run through a hashing algorithm which creates a Fingerprint or Hash. A hashing algorithm will take the certificate as an input and will output a unique string for that exact combo of input. If even a byte of data is changed in the input, the output hash will be completely different (Gibson, n.d). Many browsers will hash certificates and add the resulting fingerprint in the certificate info of a website, making it easier to check. </p>
+
+    <h4>Privacy</h4>
+    <p>I believe that private organizations have no right to eavesdrop or monitor the private information passing through their servers, all it takes is one bad actor with access to the network traffic logs to result in hacked accounts and stolen identities. I also think the government should have limited ability to monitor communications. It should be similar to having your car or home searched, if they need probable cause to search through important or personal places, they should need probable cause to search through important or personal data.</p>
+    
+    <br><br>
+    <img src="../Images/diagram.png" alt="Diagram">
+    <br><br>
+    <p class="hangingindent">Mosalane, P. What can users do to protect against SSL interception attacks? Quora. (n.d.). Retrieved August 25, 2022, from https://www.quora.com/What-can-users-do-to-protect-against-SSL-interception-attacks</p>            
+    <p class="hangingindent">Steve, S., & Gibson, G. R. (n.d.). Grc | SSL tls HTTPS web server certificate fingerprints. Gibson Research Corporation. https://www.grc.com/fingerprints.htm#top</p>
   </body>
-</html>
+  </html>

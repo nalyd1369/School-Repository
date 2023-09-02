@@ -1,0 +1,75 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+h1,h2 {
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    color: #ffcba4;
+    text-shadow: 0 0 5px black;
+}
+
+img {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.headerLink {
+    background-color: #ffcba4;
+    color: white;
+    font-family: 'Silkscreen', cursive;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.article {
+    background-color: #ffcba4;
+    color: white;
+    font-family: 'Silkscreen', cursive;
+    padding: 10.5px 19px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#github {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#center {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+    background-image: url(./Images/pc.png);
+}
+
+h3, h4 {
+    text-align: center;
+    font-size: 30px;
+}
+
+p, ul {
+    width: 50%;
+    margin-left: 25%;
+    font-size: 20px;
+}

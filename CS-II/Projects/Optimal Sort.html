@@ -14,9 +14,10 @@
     <header>
       <h1>Dylan Pettijohn's Digital Portfolio</h1>
       <h2>Student at Allen High School</h2>
-      <a class="headerLink" href="../../index.html">About Me</a>
+      <a class="headerLink" href="../index.html">About Me</a>
       <a class="headerLink" href="../education.html">Education and Projects</a>
       <a class="headerLink" href="../articles.html">Articles</a>
+      <a class="headerLink" href="./ISP/isp.html">ISP</a>   
     </header>
 
     <h3><u>Optimal Sorting</u></h3>
@@ -26,15 +27,14 @@
       Our group created a simple bubble sort algorithm in Swift. We then went and made 3 revisions to improve our sort time, making considerable progress with every revision. We ended with a time we are quite proud of for our first algorith. Our flow chart is pictured below.
       <a href="https://docs.google.com/spreadsheets/d/1uX1lt6KEbpSO5QfXwEIs8SVTGdAOERFB-jw2-rXBBi8/edit?usp=sharing">Google Sheets</a><br>
       <img src="../Images/OptimalSort.png" alt="Project diagram" id='center'>
-      <a href="https://github.com/mdraeed/Sorting-Project"><img id='github' src="../Images/github_logo.jpg" alt="Github Logo"></a>
+      <a href="https://github.com/mdraeed/Sorting-Project"><image id='github' src="../Images/github_logo.jpg" alt="Github Logo"></a>
     </p>
+    <h4>The Results</h4>
+    <p>The results of the Sort Analysis project and its tests provide a fascinating insight into the pros and cons of several sorting algorithms. However, some general trends are shown throughout the graphs. Throughout the tests, insertion sort and selection sort both perform at similar levels. However, Bubble Sort usually lags in execution speed, for example, on test 12, where all the different algorithms have to sort a reverse-ordered list containing 100,000 words. Bubble Sort lags behind both Selection Sort and Insertion Sort; Test #14 shows a trial where both Selection Sort and Insertion Sort finish within the time limit, however, Bubble Sort results in a Core Dump error. A core dump error means that the algorithm was unable to complete the sort within the 5-minute time limit. A trend between all the sorting algorithms was that they required exponentially increasing amounts of time as more and more words need to be sorted.
+      <br>Bubble Sort when compared to both Selection and Insertion Sort performs extremely poorly, this can be seen throughout the trials and be explained by the fact that it’s a much simpler algorithm, especially when compared to the other tested algorithms. For example, Bubble Sort in trial 12 sorted 100,000 words in reverse order in 1 minute and 24 seconds, while Selection Sort finishes in a much faster 1 minute and 12 seconds, and Insertion Sort manages to finish in 1 minute and 16 seconds. While this 12 and 8-second difference may seem trivial, under more intense loads, the efficiency can snowball and become a much larger difference. On top of this, Bubble Sort regularly fails some sorts that the other algorithms manage to get done within the time limit.
+      <br>Another trend was a relationship between the time taken to sort as a larger word base needs to be sorted. The graphs display, 10 words usually take less than a third of a second, 100 words also take less than a third of a second, but 1,000 words take almost a second, 10,000 words take more than a minute, and 100,000 words take more than 5 minutes and causes a system error on some algorithms.
+      <br>In conclusion, Insertion Sort and Selection Sort both perform comparatively throughout most tests. Both perform much better than Bubble Sort, especially as the word bank increases. Finally, the larger the word base, the more time it takes for all three sorting algorithms to complete a sort.
 
-    <br><br>
-
-    <h3><u>Bubble, Selection, and Insertion Sort comparison</u></h3>
-    <p>To explore the relationship between the amount of data and the time it takes to sort I developed 3 sorting alrgoritms. One utilizing bubble sort which compares two strings and if the smaller is first, flips them. An Insertion Sort which takes one string and compares it repeatedly until it's put in place. And finally a Selection Sort which scans throught the entire unsorted word bank and notes the smallest letter or word then at the end moves it to the top of the sorted list and repeats. All of these algorithms are useful in different circumstances, however one commonality between them all was an exponential time increase as the word list got larger. This makes sense when you think about how it takes probably about a minute to sort a deck of cards, however it would take closer to an hour to sort 10. This shows that althought the amount of data increased tenfold, the time it takes to sort increased sixtyfold.</p>
-    <br>
-    <p>Google sheet containing all data collected as proof for hypothesis!<p>
-    <a href="https://docs.google.com/spreadsheets/d/1LypUmDWT-NoasMaUUA0FZERdCFuMW57IDDeYvS-bRT4/edit#gid=364938441" target="_blank"><img id="github" src="../Images/google_sheets.svg" alt="Google Sheets Logo"></a>
+    </p>
   </body>
 </html>
